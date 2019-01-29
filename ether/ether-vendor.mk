@@ -1,5 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/nextbit/ether/proprietary/vendor/bin/sensors.qcom:system/vendor/bin/sensors.qcom \
     vendor/nextbit/ether/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
-    vendor/nextbit/ether/proprietary/vendor/bin/wcnss_filter:system/vendor/bin/wcnss_filter \
     vendor/nextbit/ether/proprietary/vendor/etc/data/dsi_config.xml:system/vendor/etc/data/dsi_config.xml \
     vendor/nextbit/ether/proprietary/vendor/etc/data/netmgr_config.xml:system/vendor/etc/data/netmgr_config.xml \
     vendor/nextbit/ether/proprietary/vendor/etc/data/qmi_config.xml:system/vendor/etc/data/qmi_config.xml \
@@ -95,6 +94,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/etc/nxp/settings/os/playback/4/coldboot.patch:system/vendor/etc/nxp/settings/os/playback/4/coldboot.patch \
     vendor/nextbit/ether/proprietary/vendor/etc/nxp/settings/os/playback/4/devkit_Release.parms:system/vendor/etc/nxp/settings/os/playback/4/devkit_Release.parms \
     vendor/nextbit/ether/proprietary/vendor/etc/nxp/settings/os/playback/4/speaker.speaker:system/vendor/etc/nxp/settings/os/playback/4/speaker.speaker \
+    vendor/nextbit/ether/proprietary/vendor/etc/permissions/qti-vzw-ims-internal.xml:system/vendor/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/nextbit/ether/proprietary/vendor/etc/permissions/qti_permissions.xml:system/vendor/etc/permissions/qti_permissions.xml \
     vendor/nextbit/ether/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
@@ -113,6 +113,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/nextbit/ether/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nextbit/ether/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/nextbit/ether/proprietary/vendor/bin/wcnss_filter:system/vendor/bin/wcnss_filter \
     vendor/nextbit/ether/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
     vendor/nextbit/ether/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
     vendor/nextbit/ether/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
@@ -125,6 +126,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/firmware/fpctzappfingerprint.b03:system/vendor/firmware/fpctzappfingerprint.b03 \
     vendor/nextbit/ether/proprietary/vendor/firmware/fpctzappfingerprint.mdt:system/vendor/firmware/fpctzappfingerprint.mdt \
     vendor/nextbit/ether/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
+    vendor/nextbit/ether/proprietary/vendor/framework/qti-vzw-ims-internal.jar:system/vendor/framework/qti-vzw-ims-internal.jar \
     vendor/nextbit/ether/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/nextbit/ether/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/nextbit/ether/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -392,10 +394,8 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libtime_genoff.so:system/vendor/lib64/libtime_genoff.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so \
